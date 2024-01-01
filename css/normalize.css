@@ -1,0 +1,22 @@
+:root
+{
+  /* Colors */                                   /* Cores */
+  --MainColor: #ff0;                             /* Cor principal */
+  --MainTextColor: #000;                         /* Cor do texto principal */
+  --ComplementaryColor: #f0f;                    /* Cor complementar */
+  --ComplementaryTextColor: #000;                /* Cor do texto complementar */
+  --PageBackgroundColor: #fff;                   /* Cor do fundo da página */
+
+  /* Measurements */                             /* Medidas */
+  --SectionSideMargins: 5px;                     /* Margins Laterais da Seção */
+}
+
+/* Reset */
+html, body, section, div, header, footer, table, tbody
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  background: var(--PageBackgroundColor);
+}

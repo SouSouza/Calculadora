@@ -1,0 +1,30 @@
+:root
+{
+  /* Measurements */                             /* Medidas */
+  --CalculatorButtonGap: 5px;                    /* Gap dos Botões da Calculadora */
+  --MarginBetweenTheScreenAndTheButtons: 5px;    /* Margin entre o screen e os botões */
+}
+
+section#calculator, section#calculator div.boxCalculator
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#calculator
+{
+  margin: 0 var(--SectionSideMargins);
+  min-height: 50px;
+  width: calc(100vw - var(--SectionSideMargins) * 2);
+}
+
+section#calculator div.boxCalculator div.structure div.buttons
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--CalculatorButtonGap);
+
+  margin-top: var(--MarginBetweenTheScreenAndTheButtons);
+}
