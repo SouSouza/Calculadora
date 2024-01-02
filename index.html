@@ -8,7 +8,7 @@
   <title>Minha Calculadora - SouSouza_</title>
 </head>
 <body>
-  <section id="calculator"> <!-- CSS/calculator.css -- JS/calculator.js -->
+  <section id="calculator">                      <!-- CSS/calculator.css -- JS/calculator.js -->
     <div class="boxCalculator">
       <div class="wallpaper"></div>
       <div class="structure">
@@ -16,24 +16,60 @@
           <input id="display" type="text" disabled>
         </div>
         <div class="buttons">
-          <button type="button" onclick="">C</button>
-          <button type="button" onclick="">E</button>
-          <button type="button" onclick="">*</button>
-          <button type="button" onclick="">/</button>
-          <button type="button" onclick="">7</button>
-          <button type="button" onclick="">8</button>
-          <button type="button" onclick="">9</button>
-          <button type="button" onclick="">+</button>
-          <button type="button" onclick="">4</button>
-          <button type="button" onclick="">5</button>
-          <button type="button" onclick="">6</button>
-          <button type="button" onclick="">-</button>
-          <button type="button" onclick="">1</button>
-          <button type="button" onclick="">2</button>
-          <button type="button" onclick="">3</button>
-          <button type="button" onclick="">.</button>
-          <button type="button" onclick="">0</button>
-          <button type="button" onclick="">=</button>
+          <button type="button" onclick="clearCalculatorMemory()">
+            C
+          </button>
+          <button type="button" onclick="deleteLastEnteredCharacter()">
+            E
+          </button>
+          <button type="button" onclick="selectOperator(`*`)" value="multiplicar">
+            *
+          </button>
+          <button type="button" onclick="selectOperator(`/`)" value="dividir">
+            /
+          </button>
+          <button type="button" onclick="insertCharacter(7)">
+            7
+          </button>
+          <button type="button" onclick="insertCharacter(8)">
+            8
+          </button>
+          <button type="button" onclick="insertCharacter(9)">
+            9
+          </button>
+          <button type="button" onclick="selectOperator(`+`)" value="adicionar">
+            +
+          </button>
+          <button type="button" onclick="insertCharacter(4)">
+            4
+          </button>
+          <button type="button" onclick="insertCharacter(5)">
+            5
+          </button>
+          <button type="button" onclick="insertCharacter(6)">
+            6
+          </button>
+          <button type="button" onclick="selectOperator(`-`)" value="subtrair">
+            -
+          </button>
+          <button type="button" onclick="insertCharacter(1)">
+            1
+          </button>
+          <button type="button" onclick="insertCharacter(2)">
+            2
+          </button>
+          <button type="button" onclick="insertCharacter(3)">
+            3
+          </button>
+          <button type="button" onclick="insertCharacter(`.`)">
+            .
+          </button>
+          <button type="button" onclick="insertCharacter(0)">
+            0
+          </button>
+          <button type="button" onclick="calculationResult()" value="total">
+            =
+          </button>
         </div>
       </div>
     </div>
