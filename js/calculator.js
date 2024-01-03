@@ -72,6 +72,14 @@ let calculatorArray =
       calculatorArray.display = ``
     }
 
+  // Resultado do Calculo
+  function invertNumberDisplay                     
+    () 
+    { 
+      calculatorArray.display = calculatorArray.display * -1
+      updateDisplay()
+    }
+
 // Special Functions (Funções Especiais)  ---------------------------------------------------------                       
 
   // Verificação de ponto decimal
@@ -107,6 +115,9 @@ let calculatorArray =
                 break
               case `/`:
                 calculatorArray.memory = calculatorArray.memory / calculatorArray.display
+                break
+              case `**`:
+                calculatorArray.memory = calculatorArray.memory ** 0.5
                 break
             }
         }

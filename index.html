@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/calculator.css">
+  <script src="https://kit.fontawesome.com/62c24d082d.js" crossorigin="anonymous"></script>
   <title>Minha Calculadora - SouSouza_</title>
 </head>
 <body>
@@ -23,52 +24,58 @@
             E
           </button>
           <button type="button" onclick="selectOperator(`*`)" value="multiplicar">
-            *
+            <i class="fa-solid fa-xmark"></i>
           </button>
           <button type="button" onclick="selectOperator(`/`)" value="dividir">
-            /
+            <i class="fa-solid fa-divide"></i>
           </button>
           <button type="button" onclick="insertCharacter(7)">
-            7
+            <i class="fa-solid fa-7"></i>
           </button>
           <button type="button" onclick="insertCharacter(8)">
-            8
+            <i class="fa-solid fa-8"></i>
           </button>
           <button type="button" onclick="insertCharacter(9)">
-            9
+            <i class="fa-solid fa-9"></i>
           </button>
           <button type="button" onclick="selectOperator(`+`)" value="adicionar">
-            +
+            <i class="fa-solid fa-plus"></i>
           </button>
           <button type="button" onclick="insertCharacter(4)">
-            4
+            <i class="fa-solid fa-4"></i>
           </button>
           <button type="button" onclick="insertCharacter(5)">
-            5
+            <i class="fa-solid fa-5"></i>
           </button>
           <button type="button" onclick="insertCharacter(6)">
-            6
+            <i class="fa-solid fa-6"></i>
           </button>
           <button type="button" onclick="selectOperator(`-`)" value="subtrair">
-            -
+            <i class="fa-solid fa-minus"></i>
           </button>
           <button type="button" onclick="insertCharacter(1)">
-            1
+            <i class="fa-solid fa-1"></i>
           </button>
           <button type="button" onclick="insertCharacter(2)">
-            2
+            <i class="fa-solid fa-2"></i>
           </button>
           <button type="button" onclick="insertCharacter(3)">
-            3
+            <i class="fa-solid fa-3"></i>
           </button>
           <button type="button" onclick="insertCharacter(`.`)">
             .
           </button>
           <button type="button" onclick="insertCharacter(0)">
-            0
+            <i class="fa-solid fa-0"></i>
           </button>
           <button type="button" onclick="calculationResult()" value="total">
-            =
+            <i class="fa-solid fa-equals"></i>
+          </button>
+          <button type="button" onclick="selectOperator(`**`)" value="raiz">
+            <i class="fa-solid fa-square-root-variable"></i>
+          </button>
+          <button type="button" onclick="invertNumberDisplay()">
+            <i class="fa-solid fa-plus-minus"></i>
           </button>
         </div>
       </div>

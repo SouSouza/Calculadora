@@ -18,7 +18,7 @@
       --PageBackgroundColor: #fff;                                               
 
     /* Measurements (Medidas) */
-    
+
       /* Margins Laterais da Seção */
       --SectionSideMargins: 5px;                                                 
   }
@@ -31,4 +31,5 @@ html, body, section, div, header, footer, table, tbody
     border: 0;
     box-sizing: border-box;
     background: var(--PageBackgroundColor);
+    overflow: hidden;
   }
